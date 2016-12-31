@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MediaSeminar</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<header class"navbar navbar-fixed-top navbar-inverse"></header>
+  	<div class="container">
+  		<% flash.each do |message_type, message| %>
+  		<div class="alert alert-<%=message_type %>"><%=message %></div>
+  		<%end%>
+  	<header class="navbar navbar-inverse breadcrumbs">
+  		<div class="container">
+  			<nav>
+  				<ul class="nav navbar-nav navbar-right">
+  					<li><%= link_to "Tab1", '#' %></li>
+  					<li><%= link_to "Tab2", '#' %></li>
+  					<li><%= link_to "Tab3", '#' %></li>
+  				</ul>
+  			</nav>
+  			<nav class="text-center">
+  				<h1><%= image_tag "D-Icon.png", :width => "100px", :height => "auto", :class => "style_image" %>ePauw Media Fellows</h1>
+  			</nav>
+  		</div>
+  			<nav>
+  			<ul class="nav nav-justified linkColor">
+  					<li><%= link_to "Tab1", '#' %></li>
+  					<li><%= link_to "Tab2", '#' %></li>
+  					<li><%= link_to "Tab3", '#' %></li>
+  					<li><%= link_to "Tab4", '#' %></li>
+  			</ul>
+  			</nav>
+  	</header>
+  	<div class="container">
+  		<br /><br /><br />
+	<%= yield %>
+  	</div>
+
+  	<div class="footer">
+  		<p><%= image_tag "footer_logo.png", :width => "75px", :height => "auto" %></p>
+  	</div>
+  </body>
+</html>
