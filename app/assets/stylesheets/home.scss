@@ -9,6 +9,7 @@
 .homeHead{
 	margin-top: -1em;
 	color: white;
+	font-family: "Avenir";
 }
 
 .homeHead2{
@@ -17,9 +18,11 @@
 	text-indent: 30px;
 	font-size: 20px;
 	color: white;
+	font-family: "Avenir";
 }
 .homeHead3{
 	margin-top: 1em;
+	font-family: "Avenir";
 }
 
 .homePara{
@@ -27,10 +30,12 @@
 	font-size: 18px;
 	color: white;
 	border-radius: 15px;
+	font-family: "Avenir";
 }
 
 .carousel{
 	margin-left: -3%;
+	margin-bottom: 3em;
 }
 
 img{
@@ -43,9 +48,22 @@ img{
 
 }
 
+.infographic{
+	padding: 7em;
+	background-color: #FFFFF1;
+	margin-right: -5em;
+	margin-left: -5em;
+}
 
+.bottomForm{
+	background-color: #FFC300;
+	padding: 7em;
+	margin-right: -5em;
+	margin-left: -5em;
+}
 .form-inline{
 	padding-top: .70em;
 	padding-bottom: 2em;
 	margin-left: 30px;
+
 }
