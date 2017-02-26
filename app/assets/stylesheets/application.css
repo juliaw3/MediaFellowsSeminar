@@ -50,12 +50,43 @@
 	margin-left: -20px !important;
 
 }
-
-
 .footer{
-	bottom: 0;
+
 	padding: 2em;
 	font-size: 16px;
 	background-color: #000000;
-	text-align: left;
+
 }
+
+.footImg{
+	float: left;
+	margin-right: 7em;
+	margin-left: 12%;
+}
+.footInfo{
+	float: left;
+	font-size: 12px;
+	font-family: "Avenir";
+	color: #FFFFFF;
+	margin-right: 7em;
+	border-right: solid;
+	border-left: solid;
+	border-right-width: 1px;
+	padding-left: 5em;
+	border-left-width: 1px;
+	padding-right: 5em;
+}
+.footSocial{
+	float: left;
+		font-size: 12px;
+	font-family: "Avenir";
+	color: #FFFFFF;
+
+}
+.socImg{
+	float: left;
+	margin-right: 1em;
+}
+
+
+

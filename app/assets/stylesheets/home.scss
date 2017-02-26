@@ -23,6 +23,12 @@
 .homeHead3{
 	margin-top: 1em;
 	font-family: "Avenir";
+	font-weight: bold;
+
+}
+
+.contactInfo{
+	font-family: "Avenir";
 }
 
 .homePara{
@@ -55,15 +61,33 @@ img{
 	margin-left: -5em;
 }
 
-.bottomForm{
+.floatTextR{
+	float: left;
+}
+
+.floatImgR{
+	float: left;
+	padding-top: 1em;
+	text-align: right;
+	font-size: 9px;
+	font-weight: bold;
+}
+
+
+.bottomText{
 	background-color: #FFC300;
-	padding: 7em;
+	padding-left: 5em;
+	padding-top: .5em;
 	margin-right: -5em;
 	margin-left: -5em;
+	font-family: "Avenir";
 }
-.form-inline{
+.bottomForm{
 	padding-top: .70em;
+	padding-left: 60%;
+	padding-right: 5%;
 	padding-bottom: 2em;
 	margin-left: 30px;
+	font-family: "Avenir";
 
 }

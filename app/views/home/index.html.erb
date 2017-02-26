@@ -80,21 +80,30 @@
 <div class="infographic">
   <p> Infographic Information goes here</p>
 </div>
-<div class="bottomForm">
-<h2 class="homeHead3"> The Scratch </h2>
-<p class="homeHead2"> Sign up today to receive one user-friendly email a week with DePauw's most important news </p>
 
-<form class="form-inline">
+<div class="bottomText">
+  <div class = "floatTextR">
+<h2 class="homeHead3"> CONTACT ME </h2>
+<p class="contactInfo">If you have any questions about the program please reach out or stop by the Pulliam Center to talk in person!</p>
+
+<p class="floatImgR"><%= image_tag "jnp-mud-lotus.jpg", :width => "150px", :height => "auto" %> Jonathan Nichols-Pethick</p>
+<p class="floatImgR"><%= image_tag "culler2016mefe.jpg", :width => "150px", :height => "auto" %>Marilyn Culler</p>
+    </div>
+
+<form class="bottomForm">
 	<div class="form-group">
-		<input type="name" class="form-control" id="nameFirst" placeholder="First Name">
-	</div>
-	<div class="form-group">
-		<input type="name" class="form-control" id="nameLast" placeholder="Last Name">
-	</div>
-	<div class="form-group">
-		<input type="email" class="form-control" id="email" placeholder="Email Address">
-	</div>
-	<button type="submit" class="btn btn-default">Sign me up</button>
+    <label for="exampleName">Name</label>
+    <input type="name" class="form-control" id="exampleName" placeholder="Name">
+  </div>
+  <div class="form-group">
+      <label for="exampleInputEmail">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="exampleTextarea">Message</label>
+    <textarea class="form-control" id="exampleTextarea" rows="5"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>
 
