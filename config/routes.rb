@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  resources :internships
   get 'home/index'
   get 'schedule/about'
+  get 'internships/index'
 
   root 'home#index'
 

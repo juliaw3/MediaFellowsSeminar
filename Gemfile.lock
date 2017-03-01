@@ -64,8 +64,10 @@ GEM
     faraday (0.11.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.14)
+    geocoder (1.4.3)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
+    gmaps4rails (2.1.2)
     google-api-client (0.10.0)
       addressable (~> 2.3)
       googleauth (~> 0.5)
@@ -150,6 +152,8 @@ GEM
     rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    record_tag_helper (1.0.0)
+      actionview (~> 5.x)
     representable (3.0.3)
       declarative (< 0.1.0)
       declarative-option (< 0.2.0)
@@ -207,12 +211,15 @@ DEPENDENCIES
   bootstrap-sass (= 3.3.6)
   byebug
   coffee-rails (~> 4.2)
+  geocoder
+  gmaps4rails
   google-api-client (~> 0.9)
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
   puma (~> 3.0)
   rails (~> 5.0.1)
+  record_tag_helper (~> 1.0)
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)

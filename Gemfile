@@ -32,6 +32,12 @@ gem 'jbuilder', '~> 2.5'
 
 #Google calendar API gem
 gem 'google-api-client', '~> 0.9', require: 'google/apis/calendar_v3'
+
+#Google maps
+gem 'gmaps4rails'
+#lat/long finder
+gem 'geocoder'
+gem 'record_tag_helper', '~> 1.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
