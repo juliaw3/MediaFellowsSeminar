@@ -13,6 +13,7 @@
   	<div class="container1">
   		<% flash.each do |message_type, message| %>
   		<div class="alert alert-<%=message_type %>"><%=message %></div>
+    </div>
   		<%end%>
   	
   		<div class="container">
@@ -20,7 +21,7 @@
   				<h1><%= image_tag "newLogo.png", :width => "350px", :height => "auto", :class => "style_image" %></h1>
   			<ul class="nav navbar-nav navbar-left">
             <li><%= link_to "Home", :controller => 'home', :action => 'index'%></li>
-  					<li><%= link_to "Speaker Series", :controller => 'schedule', :action => 'redirect' %></li>
+  					<li><%= link_to "Speaker Series", :controller => 'schedule', :action => 'about' %></li>
   					<li><%= link_to "Requirements", '#' %></li>
   					<li><%= link_to "Internships", :controller => 'internships', :action => 'index' %></li>
   			</ul>

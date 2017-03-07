@@ -5,13 +5,22 @@ class InternshipsController < ApplicationController
   # GET /internships.json
   def index
     @internships = Internship.all
-    @hash = Gmaps4rails.build_markers(@internships) do |internship, marker|
-      marker.lat internship.latitude
-      marker.lng internship.longitude
-      marker.infowindow internship.company
-      
+    
+    @internship_properties = Array.new
+    @internships.each do |internship|
+      @internship_properties.push(internship)
+    end
+
+   
+    @hash = Gmaps4rails.build_markers(@internship_properties) do |internship_prop, marker|
+      concat_info_window = "#{internship_prop.name}, #{internship_prop.address}, #{internship_prop.company}, #{internship_prop.title}, #{internship_prop.date}, #{internship_prop.description}"
+      marker.lat internship_prop.latitude
+      marker.lng internship_prop.longitude
+      marker.infowindow concat_info_window
+
     end
   end
+
 
   # GET /internships/1
   # GET /internships/1.json

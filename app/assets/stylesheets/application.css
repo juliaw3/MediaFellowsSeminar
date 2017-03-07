@@ -15,6 +15,7 @@
  */
 
 
+
 .container1{
 	background-color: #000000;
 }
@@ -23,13 +24,13 @@
 	margin-left: 0%;
 }
 
-.nav.navbar-nav.navbar-left li a{
+.nav.navbar-nav.navbar-left a{
 	color: #FFCF01;
 	margin-top: 1em;
 	font-size: 16px;
 	font-family: "Avenir";
 }
-.nav.navbar-nav.navbar-left li a:hover{
+.nav.navbar-nav.navbar-left a:hover{
 	color: #FFFFFF;
 }
 
@@ -41,6 +42,9 @@
 .navbar{
 	background-color: #000000;
 	color: #FFCF01;
+	margin-right: -10%;
+	margin-left: -10%;
+	margin-top: 0%;
 }
 
 .text-center{
