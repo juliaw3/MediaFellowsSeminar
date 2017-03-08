@@ -1,8 +1,11 @@
 class InternshipsController < ApplicationController
   before_action :set_internship, only: [:show, :edit, :update, :destroy]
 
+
   # GET /internships
   # GET /internships.json
+  
+
   def index
     @internships = Internship.all
     
@@ -22,9 +25,11 @@ class InternshipsController < ApplicationController
   end
 
 
+
   # GET /internships/1
   # GET /internships/1.json
   def show
+    respond_with(@internship, :layout => !request.xhr?)
   end
 
   # GET /internships/new
