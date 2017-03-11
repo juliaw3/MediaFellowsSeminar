@@ -1,0 +1,23 @@
+
+<% @internships.each do |internship| %>
+<% if internship.company == internship_prop && internship.name == internship_prop2%>
+<h3><%=internship.address%></h3>
+<h5>Name: <%=internship.name%></h5>
+<table class="table table-hover">
+            <tr>
+                <th>Company</th>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Description</th>
+            </tr>
+           
+                <tr>
+                    <td><%=internship.company%></td>
+                    <td><%=internship.title%></td>
+                    <td><%=internship.date%></td>
+                    <td><%=internship.description%></td>
+                </tr>
+            
+        </table>  
+    <% end %>
+<% end %>

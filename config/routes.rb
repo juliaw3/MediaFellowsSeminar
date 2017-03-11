@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'contact/new'
+
+  get 'contact/create'
+
   resources :internships
   get 'home/index'
   get 'schedule/about'

@@ -16,10 +16,12 @@ class InternshipsController < ApplicationController
 
    
     @hash = Gmaps4rails.build_markers(@internship_properties) do |internship_prop, marker|
-      concat_info_window = "#{internship_prop.name}, #{internship_prop.address}, #{internship_prop.company}, #{internship_prop.title}, #{internship_prop.date}, #{internship_prop.description}"
+      #concat_info_window = "Name: #{internship_prop.name}, Location: #{internship_prop.address}, Company: #{internship_prop.company}, Role: #{internship_prop.title}, Date: #{internship_prop.date}, Description: #{internship_prop.description}"
       marker.lat internship_prop.latitude
       marker.lng internship_prop.longitude
-      marker.infowindow concat_info_window
+    
+      #marker.infowindow concat_info_window 
+      marker.infowindow render_to_string(:partial => "/internships/info", :locals => { :internship => @internship, :internship_prop => internship_prop.company, :internship_prop2 => internship_prop.name})
 
     end
   end
