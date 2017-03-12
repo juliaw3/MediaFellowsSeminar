@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'home/index'
   get 'schedule/about'
   get 'internships/index'
+  get 'requirements/index'
 
   root 'home#index'
 

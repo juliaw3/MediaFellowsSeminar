@@ -1,0 +1,147 @@
+// Place all the styles related to the requirements controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.requirementsHead{
+	background-color: #FFCF01;
+	color: #FFFFFF;
+	margin-left: 25%;
+	margin-top: -7.5em;
+	width: 50%;
+	height: 200px;
+	text-align: center;
+	font-family: "Avenir";
+}
+.requirementsHead h1{
+	font-weight: bold;
+	font-size: 70px;
+}
+
+.requirementsDescription{
+	background-color: #000000;
+	color: #FFFFFF;
+	margin-left: 25%;
+	margin-top: 0;
+	width: 50%;
+
+	text-align: center;
+	font-family: "Avenir";
+
+}
+.requirementsDescription p{
+	font-size: 18px;
+}
+
+.requirementsFirst{
+	background-color: #8EA2BE;
+	margin-left: 25%;
+	margin-top: 0;
+	width: 50%;
+	font-family: "Avenir";
+	padding-bottom: 2em;
+}
+
+.firstIcon{
+	float: right;
+	margin-top: -1.5em;
+	margin-right: 2em;
+}
+.firstYear{
+	padding-top: 1em;
+	width: 40%;
+	margin-left: 10%;
+}
+
+.firstYear h1{
+	font-family: "Avenir";
+	background-color: #e04040;
+	color: #FFFFFF;
+	font-size: 18px;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	padding-right: .5em;
+	padding-left: .5em;
+	text-align: center;
+}
+
+.firstYear p{
+	font-family: "Avenir";
+	color: #FFFFFF;
+	font-size: 16px;
+	text-align: center;
+}
+
+.requirementsSecond{
+	background-color: #FFFFFF;
+	margin-left: 25%;
+	margin-top: -2em;
+	width: 50%;
+	font-family: "Avenir";
+	padding-bottom: 2em;
+}
+
+.secondYear{
+	float: right;
+	padding-top: 1em;
+	width: 40%;
+	margin-right: -13em;
+}
+.secondIcon{
+	margin-top: -1.5em;
+	margin-left: 2em;
+}
+
+.secondYear h1{
+	font-family: "Avenir";
+	background-color: #e04040;
+	color: #FFFFFF;
+	font-size: 18px;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	padding-right: .5em;
+	padding-left: .5em;
+	text-align: center;
+}
+
+.secondYear p{
+	font-family: "Avenir";
+	color: #000000;
+	font-size: 16px;
+	text-align: center;
+}
+
+.fourthYear{
+	float: right;
+	padding-top: 1em;
+	width: 40%;
+	margin-right: 3em;
+}
+
+.fourthYear h1{
+	font-family: "Avenir";
+	background-color: #e04040;
+	color: #FFFFFF;
+	font-size: 18px;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	padding-right: .5em;
+	padding-left: .5em;
+	text-align: center;
+}
+
+.fourthYear p{
+	font-family: "Avenir";
+	color: #000000;
+	font-size: 16px;
+	text-align: center;
+}
+
+.requirementsClose{
+	background-color: #FFCF01;
+	margin-left: 25%;
+	width: 50%;
+	height: 30px;
+}
+
+
+
