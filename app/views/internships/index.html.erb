@@ -36,11 +36,11 @@
 -->
 
 
-
+<!-- to turn clustering off, inside the marker:{} paramater add: {Markers: {clusterer: undefined}}); -->
 
 
   <script type="text/javascript">
-    handler = Gmaps.build('Google', {markers:{clusterer: undefined}});
+    handler = Gmaps.build('Google', {markers:{}});
     handler.buildMap({ provider: {styles:[
     {
         "featureType": "all",
@@ -227,7 +227,6 @@
 <br>
 <br>
 <br>
-
 
 
 
