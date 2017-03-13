@@ -31,7 +31,7 @@ class InternshipsController < ApplicationController
   # GET /internships/1
   # GET /internships/1.json
   def show
-    respond_with(@internship, :layout => !request.xhr?)
+    
   end
 
   # GET /internships/new
@@ -91,6 +91,6 @@ class InternshipsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def internship_params
-      params.require(:internship).permit(:latitude, :longitude, :name, :address, :title, :company, :date, :description)
+      params.require(:internship).permit(:latitude, :longitude, :address, :name, :location, :title, :company, :date, :description)
     end
 end
