@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
+  resources :schedules
   get 'contact/new'
 
   get 'contact/create'
 
   resources :internships
   get 'home/index'
-  get 'schedule/about'
+  get 'schedules/index'
   get 'internships/index'
   get 'requirements/index'
 

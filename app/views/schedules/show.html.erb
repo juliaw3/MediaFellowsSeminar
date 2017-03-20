@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Student ID:</strong>
+  <%= @schedule.studentId %>
+</p>
+
+<p>
+  <strong>Event Name:</strong>
+  <%= @schedule.eventName %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @schedule.description %>
+</p>
+
+<%= link_to 'Edit', edit_schedule_path(@schedule) %> |
+<%= link_to 'Back', schedules_path %>
