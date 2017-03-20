@@ -40,7 +40,7 @@
 
 
   <script type="text/javascript">
-    handler = Gmaps.build('Google', {markers:{}});
+    handler = Gmaps.build('Google', {markers:{clusterer: undefined}});
     handler.buildMap({ provider: {styles:[
     {
         "featureType": "all",
@@ -230,7 +230,7 @@
 
 
 
-<!--
+
 
 <div class="page-header">
   <%=link_to new_internship_path, class: 'btn btn-primary' do %>
@@ -248,11 +248,6 @@
       <th>Longitude</th>
       <th>Address</th>
       <th>Name</th>
-      <th>Location</th>
-      <th>Title</th>
-      <th>Company</th>
-      <th>Date</th>
-      <th>Description</th>
       <th></th>
       <th></th>
       <th></th>
@@ -267,11 +262,6 @@
         <td><%= internship.longitude %></td>
         <td><%= internship.address %></td>
         <td><%= internship.name %></td>
-        <td><%= internship.location %></td
-        <td><%= internship.title %></td>
-        <td><%= internship.company %></td>
-        <td><%= internship.date %></td>
-        <td><%= internship.description %></td>
         <td><%= link_to 'Show', internship %></td>
         <td><%= link_to 'Edit', edit_internship_path(internship) %></td>
         <td><%= link_to 'Destroy', internship, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -282,7 +272,7 @@
 </div>
 
 
--->
+
 
 
 

@@ -10,6 +10,10 @@ class CreateInternships < ActiveRecord::Migration[5.0]
       t.string :company
       t.string :date
       t.string :description
+      t.string :image
+      t.string :carouselImage1
+      t.string :carouselImage2
+      t.string :carouselImage3
 
       t.timestamps
     end

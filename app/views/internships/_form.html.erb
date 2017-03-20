@@ -53,8 +53,50 @@
 
   <div class="field">
     <%= f.label :description %>
-    <%= f.text_field :description %>
+    <%= f.text_area :description %>
   </div>
+
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+    <% if f.object.image? %>
+      <%= image_tag f.object.image.url %>
+      <%= f.label :remove_image %>
+      <%= f.check_box :remove_image %> 
+    <% end %>
+  </div>
+
+  <div class="field">
+    <%= f.label :carouselImage1 %>
+    <%= f.file_field :carouselImage1 %>
+    <% if f.object.carouselImage1? %>
+      <%= image_tag f.object.carouselImage1.url %>
+      <%= f.label :remove_carouselImage1 %>
+      <%= f.check_box :remove_carouselImage1 %> 
+    <% end %>
+  </div>
+
+    <div class="field">
+    <%= f.label :carouselImage2 %>
+    <%= f.file_field :carouselImage2 %>
+    <% if f.object.carouselImage2? %>
+      <%= image_tag f.object.carouselImage2.url %>
+      <%= f.label :remove_carouselImage2 %>
+      <%= f.check_box :remove_carouselImage2 %> 
+    <% end %>
+  </div>
+
+  <div class="field">
+    <%= f.label :carouselImage3 %>
+    <%= f.file_field :carouselImage3 %>
+    <% if f.object.carouselImage3? %>
+      <%= image_tag f.object.carouselImage3.url %>
+      <%= f.label :remove_carouselImage3 %>
+      <%= f.check_box :remove_carouselImage3 %> 
+    <% end %>
+  </div>
+
+
 
   <div class="actions">
     <%= f.submit %>

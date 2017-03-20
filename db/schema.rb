@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170313181545) do
+ActiveRecord::Schema.define(version: 20170320004911) do
 
   create_table "internships", force: :cascade do |t|
     t.float    "latitude"
@@ -21,9 +21,13 @@ ActiveRecord::Schema.define(version: 20170313181545) do
     t.string   "company"
     t.string   "date"
     t.string   "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
     t.string   "location"
+    t.string   "image"
+    t.string   "carouselImage1"
+    t.string   "carouselImage2"
+    t.string   "carouselImage3"
   end
 
 end

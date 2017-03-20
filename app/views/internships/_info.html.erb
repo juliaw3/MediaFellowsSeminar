@@ -1,23 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Infowindow</title>  
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      height: 20%;
+      margin: auto;
+  }
+  </style> 
+</head>
+
+<body>
 
 <% @internships.each do |internship| %>
 <% if internship.company == internship_prop && internship.name == internship_prop2%>
-<h3><%=internship.company%></h3>
-<h5>Name: <%=internship.name%></h5>
-<table class="table table-hover">
-            <tr>
-                <th>Location</th>
-                <th>Title</th>
-                <th>Date</th>
-                <th>Description</th>
-            </tr>
-           
-                <tr>
-                    <td><%=internship.location%></td>
-                    <td><%=internship.title%></td>
-                    <td><%=internship.date%></td>
-                    <td><%=internship.description%></td>
-                </tr>
-            
-        </table>  
-    <% end %>
+<div class="headView">
+    <h2><%=internship.name%></h2>
+    <h4><%=internship.location%></h4>
+    <h5>Company: <%=internship.company%></h5>
+    <h5>Title: <%=internship.title%></h5>
+    <h5>Semester: <%=internship.date%></h5>
+
+</div>
+<h4 class ="imageView"><%= image_tag internship.image.url unless internship.image.blank? %></h4>
+
+<div class='bodyView'>
+    <p><%=internship.description%></p>
+</div>
+
+<hr>
+
+<div class = "carouselImage1">
+    <h4><%= image_tag internship.carouselImage1.url unless internship.carouselImage1.blank? %></h4>
+</div>
+<div class = "carouselImage2">
+    <h4><%= image_tag internship.carouselImage2.url unless internship.carouselImage2.blank? %></h4>
+</div>
+<div class = "carouselImage3">
+    <h4><%= image_tag internship.carouselImage3.url unless internship.carouselImage3.blank? %></h4>
+</div>
+
+
+
+ 
 <% end %>
+
+<% end %>
+
+</body>
+</html>

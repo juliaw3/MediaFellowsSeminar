@@ -91,6 +91,6 @@ class InternshipsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def internship_params
-      params.require(:internship).permit(:latitude, :longitude, :address, :name, :location, :title, :company, :date, :description)
+      params.require(:internship).permit(:latitude, :longitude, :address, :name, :location, :title, :company, :date, :description, :image, :remove_image, :carouselImage1, :remove_carouselImage1, :carouselImage2, :remove_carouselImage2, :carouselImage3, :remove_carouselImage3)
     end
 end
