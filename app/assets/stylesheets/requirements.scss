@@ -2,27 +2,36 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.rightColumn{
+	float: right;
+}
+.leftColumn{
+	float: left;
+}
+
+
 .requirementsHead{
 	background-color: #FFCF01;
 	color: #FFFFFF;
-	margin-left: 25%;
+	margin-left: 5%;
 	margin-top: -7.5em;
-	width: 50%;
-	height: 200px;
+	width: 40%;
+	height: 150px;
 	text-align: center;
 	font-family: "Avenir";
 }
 .requirementsHead h1{
 	font-weight: bold;
-	font-size: 70px;
+	font-size: 50px;
 }
+
 
 .requirementsDescription{
 	background-color: #000000;
 	color: #FFFFFF;
-	margin-left: 25%;
+	margin-left: 5%;
 	margin-top: 0;
-	width: 50%;
+	width: 40%;
 
 	text-align: center;
 	font-family: "Avenir";
@@ -30,14 +39,14 @@
 }
 .requirementsDescription p{
 	margin-top: .5em;
-	font-size: 18px;
+	font-size: 15px;
 }
 
 .requirementsFirst{
 	background-color: #8EA2BE;
-	margin-left: 25%;
+	margin-left: 5%;
 	margin-top: 0;
-	width: 50%;
+	width: 40%;
 	font-family: "Avenir";
 	padding-bottom: 2em;
 }
@@ -49,12 +58,14 @@
 }
 .firstYear{
 	padding-top: 1em;
-	width: 40%;
-	margin-left: 10%;
+	width: 50%;
+	margin-left: 5%;
 }
 
 .firstYear h1{
 	font-family: "Avenir";
+	margin-top: 0;
+	margin-left: 1em;
 	background-color: #e04040;
 	color: #FFFFFF;
 	font-size: 18px;
@@ -74,9 +85,9 @@
 
 .requirementsSecond{
 	background-color: #FFFFFF;
-	margin-left: 25%;
+	margin-left: 5%;
 	margin-top: -2em;
-	width: 50%;
+	width: 40%;
 	font-family: "Avenir";
 	padding-bottom: 2em;
 }
@@ -84,12 +95,12 @@
 .secondYear{
 	float: right;
 	padding-top: 1em;
-	width: 40%;
+	width: 50%;
 	margin-right: -13em;
 }
 .secondIcon{
 	margin-top: -1.5em;
-	margin-left: 2em;
+	margin-left: 1em;
 }
 
 .secondYear h1{
@@ -139,9 +150,149 @@
 
 .requirementsClose{
 	background-color: #FFCF01;
-	margin-left: 25%;
-	width: 50%;
+	margin-left: 5%;
+	width: 40%;
 	height: 30px;
+}
+
+
+
+
+
+
+
+.requirementsHead1{
+	background-color: #FFCF01;
+	color: #FFFFFF;
+	margin-left: 50%;
+	margin-top: -80.5em;
+	width: 40%;
+	height: 125px;
+	text-align: center;
+	font-family: "Avenir";
+}
+
+.requirementsHead1 h1{
+	font-weight: bold;
+	font-size: 50px;
+	margin-top: -.2em;
+}
+
+.requirementsFirst1{
+	background-color: #8EA2BE;
+	margin-left: 50%;
+	margin-top: 0;
+	width: 40%;
+	height: 120px;
+	font-family: "Avenir";
+	padding-bottom: 2em;
+}
+
+.firstYear1{
+	padding-top: .2em;
+	width: 100%;
+	
+}
+
+.firstYear1 h1{
+	margin-left: 40px;
+	margin-top: .5em;
+	width: 80%;
+	margin-right: 0;
+	font-family: "Avenir";
+	background-color: #e04040;
+	color: #FFFFFF;
+	font-size: 18px;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	padding-right: .5em;
+	padding-left: .5em;
+	text-align: center;
+}
+
+.firstYear1 p{
+	font-family: "Avenir";
+	margin-left: 20px;
+	margin-right: 20px;
+	color: #FFFFFF;
+	font-size: 16px;
+	text-align: center;
+
+}
+
+.speakerCredit{
+	background-color: #ffffff;
+	margin-left: 50%;
+	margin-top: 0;
+	width: 40%;
+	height: 130px;
+	font-family: "Avenir";
+	padding-bottom: 2em;
+}
+
+.creditContent{
+	margin-top: 0;
+	padding-top: 1em;
+	width: 100%;
+	margin-left: .5em;
+}
+
+.creditContent h1{
+	margin-left: 40px;
+	margin-top: .2em;
+	width: 80%;
+	margin-right: 0;
+	font-family: "Avenir";
+	background-color: #e04040;
+	color: #FFFFFF;
+	font-size: 18px;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	padding-right: .5em;
+	padding-left: .5em;
+	text-align: center;
+}
+
+.creditContent p{
+	font-family: "Avenir";
+	margin-right: 20px;
+	margin-left: 10px;
+	color: #000000;
+	font-size: 16px;
+	text-align: center;
+}
+
+.mediaCourses{
+	background-color: #8EA2BE;
+	margin-left: 50%;
+	margin-top: 0;
+	width: 40%;
+	height: 755px;
+	font-family: "Avenir";
+	padding-bottom: 2em;
+}
+
+.courses h1{
+	margin-left: 10px;
+	margin-top: .2em;
+	width: 35%;
+	margin-right: 0;
+	font-family: "Avenir";
+	background-color: #e04040;
+	color: #FFFFFF;
+	font-size: 14px;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	padding-right: .5em;
+	padding-left: .5em;
+	text-align: center;
+}
+
+.courses p{
+	width: 100%;
+	margin-left: 7%;
+	color: #454545;
+	font-familt: "Avenir"
 }
 
 
