@@ -86,9 +86,27 @@ fieldset[disabled] .btn-sample.active {
 
 .tableStyle{
 
-	background-color: #FFCF01; 
-
+	background-color: #ffffff; 
+  width: 23%;
+  font-size: 12px;
+  font-family: "Avenir";
+  margin-left: 15%;
+  padding-left: 3em;
+  padding-right: 3em;
+  border: 7px solid #FFCF01;
 
 }
+.tableHead{
+  color: #FFCF01;
+}
+.tableStyle td{
+  font-size: 20px;
+  text-align: center;
+}
 
+.headLog2{
+  margin-top: 0;
+  color: #ffffff;
+  font-family: "Avenir";
+}
 
