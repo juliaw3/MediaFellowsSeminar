@@ -41,7 +41,32 @@
 
   <script type="text/javascript">
     handler = Gmaps.build('Google', {markers:
-        {clusterer: undefined}});
+        {clusterer: {
+            gridSize: 40,
+            maxZoom: 25,
+            styles:[{
+                textSize: 0,
+                textColor: '#ffffff',
+                url: '/assets/darkLocation.png',
+                height: 46,
+                width: 30},
+                {
+                    textSize: 0,
+                    textColor: '#ffffff',
+                    url: '/assets/darkLocation.png',
+                    height: 56,
+                    width: 40},
+                {
+                    textSize: 0,
+                    textColor: '#ffffff',
+                    url: '/assets/darkLocation.png',
+                    height: 66,
+                    width: 50}
+            ]}}}
+
+
+
+        );
     handler.buildMap({ provider: {styles:[
     {
         "featureType": "all",
