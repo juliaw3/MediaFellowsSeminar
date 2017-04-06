@@ -46,6 +46,9 @@ gem 'simple_form'
 gem 'carrierwave', '~> 0.10.0'
 gem 'mini_magick', '~> 4.3'
 
+#admin login
+gem 'devise'
+gem 'rails_admin', '~> 1.1.1'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'

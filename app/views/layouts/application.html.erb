@@ -9,6 +9,14 @@
   </head>
 
   <body>
+
+    <% if current_user %>
+      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+    <% else %>
+      <%= link_to "Admin Login", new_user_session_path %>
+    <% end %>
+    
+
   	<header class="navbar navbar-inverse" role="navigation">
   	<div class="container1">
   		<% flash.each do |message_type, message| %>
@@ -20,10 +28,10 @@
   			<nav class="text-center">
   				<h1><%= image_tag "newLogo.png", :width => "350px", :height => "auto", :class => "style_image" %></h1>
   			<ul class="nav navbar-nav navbar-left">
-            <li><%= link_to "Home", :controller => 'home', :action => 'index'%></li>
-  					<li><%= link_to "Speaker Series", :controller => 'schedules', :action => 'index' %></li>
-  					<li><%= link_to "Requirements", :controller => 'requirements', :action => 'index' %></li>
-  					<li><%= link_to "Internships", :controller => 'internships', :action => 'index' %></li>
+            <li><%= link_to "Home", :controller => '/home', :action => 'index'%></li>
+  					<li><%= link_to "Speaker Series", :controller => '/schedules', :action => 'index' %></li>
+  					<li><%= link_to "Requirements", :controller => '/requirements', :action => 'index' %></li>
+  					<li><%= link_to "Internships", :controller => '/internships', :action => 'index' %></li>
   			</ul>
   			</nav>
         </div>
