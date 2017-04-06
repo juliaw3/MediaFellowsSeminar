@@ -1,7 +1,9 @@
 class HomeController < ApplicationController
   def index
-  	if current_user
-  		redirect_to schedules_path
-  	end
+
+  	# this if statement is needed if we want all users to have to log in (path is incorrect)
+  	#if current_user
+  	#	redirect_to schedules_path
+  	#end
   end
 end
