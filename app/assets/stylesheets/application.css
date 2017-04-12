@@ -42,8 +42,9 @@
 .navbar{
 	background-color: #000000;
 	color: #FFCF01;
-	margin-right: -10%;
+	margin-right: 0%;
 	margin-left: -10%;
+	padding-left:2em;
 	margin-top: 0%;
 }
 
