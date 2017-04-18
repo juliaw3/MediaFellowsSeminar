@@ -32,9 +32,9 @@
 .btn-sample:active, 
 .btn-sample.active, 
 .open .dropdown-toggle.btn-sample { 
-  color: #FFFFFF; 
+  color: #ffffff; 
   background-color: #FFCF14; 
-  border-color: #FFFFFF; 
+  border-color: #ffffff; 
 } 
  
 .btn-sample:active, 
@@ -63,7 +63,8 @@ fieldset[disabled] .btn-sample.active {
 } 
  
 .btn-sample .badge { 
-  color: #FFCF01; 
+  color: #Ffffff
+  ; 
   background-color: #FFFFFF; 
 }
 
@@ -87,10 +88,15 @@ fieldset[disabled] .btn-sample.active {
 .tableStyle{
 
 	background-color: #ffffff; 
-  width: 23%;
+  width: 45%;
+
+  display: block;
+  height: 400px;
+  overflow-y: scroll;
+
   font-size: 12px;
   font-family: "Avenir";
-  margin-left: 15%;
+  margin-left: 5%;
   padding-left: 3em;
   padding-right: 3em;
   border: 7px solid #FFCF01;
@@ -98,6 +104,8 @@ fieldset[disabled] .btn-sample.active {
 }
 .tableHead{
   color: #FFCF01;
+  font-size: 20px;
+  text-align: center;
 }
 .tableStyle td{
   font-size: 20px;
@@ -108,5 +116,5 @@ fieldset[disabled] .btn-sample.active {
   margin-top: 0;
   color: #ffffff;
   font-family: "Avenir";
-}
+} 
 
