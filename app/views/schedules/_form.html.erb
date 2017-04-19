@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <title>MediaSeminar</title>
-        <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      
- </head>
+<head>
+  <title>MediaSeminar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
- <body>
-<%= form_for(schedule) do |f| %>
-  <% if schedule.errors.any? %>
+</head>
+
+<body>
+  <div class = "container">
+    <div class = "signInForm">
+
+    <%= form_for(schedule) do |f| %>
+    <% if schedule.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(schedule.errors.count, "error") %> prohibited this schedule from being saved:</h2>
 
       <ul>
-      <% schedule.errors.full_messages.each do |message| %>
+        <% schedule.errors.full_messages.each do |message| %>
         <li><%= message %></li>
-      <% end %>
+        <% end %>
       </ul>
     </div>
-  <% end %>
+    <% end %>
+    <div class = "row">
+      <div class = "col-md-8">
 
-  <div class="field">
-    <%= f.label :studentId, "Student ID" %>
-    <%= f.text_field :studentId %>
+        <div class="field">
+          <%= f.label :studentId, "Student ID" %>
+          <%= f.text_field :studentId %>
+        </div>
+      </div>
+    </div>
+
+    <div class = "row">
+      <div class = "col-md-8">
+
+        <div class="field">
+          <%= f.label :eventName, "Event Name" %>
+          <%= f.text_field :eventName %>
+        </div>
+      </div>
+    </div>
+
+    <div class = "row">
+      <div class = "col-md-8">
+
+        <div class="field">
+          <%= f.label :description, "Favorite Quote" %>
+          <%= f.text_area :description %>
+        </div>
+      </div>
+    </div>
+
+    <div class = "row">
+      <div class = "col-md-8">
+
+        <div class="actions">
+          <%= f.submit "Submit Speaker Credit" %>
+        </div>
+        <% end %>
+      </div>
+    </div>
+    <br>
+</div>
   </div>
-
-  <div class="field">
-    <%= f.label :eventName, "Event Name" %>
-    <%= f.text_field :eventName %>
-  </div>
-
-  <div class="field">
-    <%= f.label :description, "Favorite Quote" %>
-    <%= f.text_area :description %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Submit Speaker Credit" %>
-  </div>
-<% end %>
-<br>
-
 </body>
 </html>

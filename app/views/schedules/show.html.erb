@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <title>MediaSeminar</title>
-        <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      
-    </head>
-    <body>
+<head>
+  <title>MediaSeminar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<p>
-  <strong>Student ID:</strong>
-  <%= @schedule.studentId %>
-</p>
+</head>
+<body>
+  <div class = "container">
+    <div class = "signInForm">
+      <div class = "row">
+        <div class = "col-md-8">
+          <p>
+            <strong>Student ID:</strong>
+            <%= @schedule.studentId %>
+          </p>
+        </div>
+      </div>
 
-<p>
-  <strong>Event Name:</strong>
-  <%= @schedule.eventName %>
-</p>
+      <div class = "row">
+        <div class = "col-md-8">
+          <p>
+            <strong>Event Name:</strong>
+            <%= @schedule.eventName %>
+          </p>
+        </div>
+      </div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @schedule.description %>
-</p>
-
-<%= link_to 'Edit', edit_schedule_path(@schedule) %> |
-<%= link_to 'Back', schedules_path %>
+      <div class = "row">
+        <div class = "col-md-8">
+          <p>
+            <strong>Description:</strong>
+            <%= @schedule.description %>
+          </p>
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "col-md-8">
+          <%= link_to 'Edit', edit_schedule_path(@schedule) %> |
+          <%= link_to 'Back', schedules_path %>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

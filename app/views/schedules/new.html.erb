@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <title>MediaSeminar</title>
-        <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      
- </head>
+<head>
+	<title>MediaSeminar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
- <body class="container1">
- 	<div class = "logingShow">
+</head>
+<body class = "signInForm">
+	<div class = "container">
+		<div class = "signInForm">
+		<div class = "logingShow">
 
-<h1>Log Speaker Credit Attendence</h1>
+			<div class = "row">
+				<div class = "col-md-8">
+					<h1>Log Speaker Credit Attendence</h1>
+				</div>
+			</div>
+			<div class = "row">
+				<div class = "col-md-8">
+					<%= render 'form', schedule: @schedule %>
 
-<%= render 'form', schedule: @schedule %>
-
-<%= link_to 'Back', schedules_path %>
+					<%= link_to 'Back', schedules_path %>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-
 </body>
 </html>

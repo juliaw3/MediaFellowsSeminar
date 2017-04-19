@@ -60,20 +60,49 @@ iframe{
 
 .infographic{
 	margin-right: 19.5em;
-	margin-left: -30em;
+	margin-left: -33em;
+}
+.bottomText{
+	background-color: #FFCF01;
+	padding-left: 3em;
+	padding-top: .5em;
+	margin-right: -5em;
+	margin-left: -5em;
+	margin-top: -1em;
+	font-family: "Avenir";
+	overflow: auto;
+	padding-bottom: 7.85em;
 }
 
-.floatTextR{
-	float: left;
+.bottomText2{
+	background-color: #FFCF01;
+	padding-left: 3em;
+	padding-top: .5em;
+	margin-right: -5em;
+	margin-left: -5em;
+	margin-top: -1em;
+	font-family: "Avenir";
+	overflow: auto;
+	padding-bottom: 1em;
+}
+.bottomText3{
+	background-color: #FFCF01;
+	padding-left: 3em;
+	padding-top: .5em;
+	margin-right: -5em;
+	margin-left: -5em;
+	margin-top: -1em;
+	font-family: "Avenir";
+	overflow: auto;
 }
 
 .floatImgR{
 	float: left;
-	padding-top: 1em;
+	padding-top: 0;
 	margin-left: -3em;
 	margin-right: 4em;
 }
-.floatTxtR{
+.floatTxtR{	
 	float: left;
 	margin-right: 1em;
 	padding-top: 1em;
@@ -82,21 +111,10 @@ iframe{
 
 }
 
-
-.bottomText{
-	background-color: #FFCF01;
-	padding-left: 5em;
-	padding-top: .5em;
-	margin-right: -5em;
-	margin-left: -5em;
-	font-family: "Avenir";
-}
 .bottomForm{
-	padding-top: .70em;
-	padding-left: 60%;
-	padding-right: 5%;
-	padding-bottom: 2em;
-	margin-left: 30px;
+	padding-top: -.70em;
 	font-family: "Avenir";
+	padding-right: 1em;
+
 
 }
