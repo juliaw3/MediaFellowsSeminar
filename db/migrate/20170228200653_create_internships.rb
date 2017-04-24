@@ -5,7 +5,7 @@ class CreateInternships < ActiveRecord::Migration[5.0]
       t.float :longitude
       t.string :address
       t.string :name
-      
+      t.string :location
       t.string :title
       t.string :company
       t.string :date
