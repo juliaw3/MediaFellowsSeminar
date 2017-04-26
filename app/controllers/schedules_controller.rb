@@ -2,11 +2,14 @@ class SchedulesController < ApplicationController
   #this before action is needed if we want all users to login
   #before_action :authenticate_user!
   before_action :set_schedule, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /schedules
   # GET /schedules.json
   def index
     @schedules = Schedule.group(:studentId).count
+
+
     
   end
 
