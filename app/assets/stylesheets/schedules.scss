@@ -19,54 +19,54 @@
 }
 
 .btn-sample { 
-  color: #000000; 
-  background-color: #FFCF01; 
-  border-color: #FFCF01; 
-  margin-left: 4em;
-  height: 40px;
-  font-size: 50px;
-} 
+   color: #FFFFFF; 
+   background-color: #FFCF01; 
+   border-color: #FFFFFF; 
+   margin-left: 4em;
+   height: 40px;
+   font-size: 50px;
+ } 
+  
+ .btn-sample:hover, 
+ .btn-sample:focus, 
+ .btn-sample:active, 
+ .btn-sample.active, 
+ .open .dropdown-toggle.btn-sample { 
+   color: #FFFFFF; 
+   background-color: #FFCF14; 
+   border-color: #FFFFFF; 
+ } 
+  
+ .btn-sample:active, 
+ .btn-sample.active, 
+ .open .dropdown-toggle.btn-sample { 
+   background-image: none; 
+ } 
+  
+ .btn-sample.disabled, 
+ .btn-sample[disabled], 
+ fieldset[disabled] .btn-sample, 
+ .btn-sample.disabled:hover, 
+ .btn-sample[disabled]:hover, 
+ fieldset[disabled] .btn-sample:hover, 
+ .btn-sample.disabled:focus, 
+ .btn-sample[disabled]:focus, 
+ fieldset[disabled] .btn-sample:focus, 
+ .btn-sample.disabled:active, 
+ .btn-sample[disabled]:active, 
+ fieldset[disabled] .btn-sample:active, 
+ .btn-sample.disabled.active, 
+ .btn-sample[disabled].active, 
+ fieldset[disabled] .btn-sample.active { 
+   background-color: #FFCF01; 
+   border-color: #FFFFFF; 
+ } 
+  
+ .btn-sample .badge { 
+   color: #FFCF01; 
+   background-color: #FFFFFF; 
+ }
  
-.btn-sample:hover, 
-.btn-sample:focus, 
-.btn-sample:active, 
-.btn-sample.active, 
-.open .dropdown-toggle.btn-sample { 
-  color: #000000; 
-  background-color: #FFCF14; 
-  border-color: #FFCF01; 
-} 
- 
-.btn-sample:active, 
-.btn-sample.active, 
-.open .dropdown-toggle.btn-sample { 
-  background-image: none; 
-} 
- 
-.btn-sample.disabled, 
-.btn-sample[disabled], 
-fieldset[disabled] .btn-sample, 
-.btn-sample.disabled:hover, 
-.btn-sample[disabled]:hover, 
-fieldset[disabled] .btn-sample:hover, 
-.btn-sample.disabled:focus, 
-.btn-sample[disabled]:focus, 
-fieldset[disabled] .btn-sample:focus, 
-.btn-sample.disabled:active, 
-.btn-sample[disabled]:active, 
-fieldset[disabled] .btn-sample:active, 
-.btn-sample.disabled.active, 
-.btn-sample[disabled].active, 
-fieldset[disabled] .btn-sample.active { 
-  background-color: #FFCF01; 
-  border-color: #FFCF01; 
-} 
- 
-.btn-sample .badge { 
-  color: #000000
-  ; 
-  background-color:#FFCF01; 
-}
 
 .logingShow{
 	margin-top: -5em;
@@ -122,7 +122,16 @@ fieldset[disabled] .btn-sample.active {
 
 .signInForm{
   background-color: #000000;
-  color: #ffffff;
+  color: #000000;
   margin-top: 2em;
+}
+
+.formLabel{
+  color: #FFFFFF;
+}
+
+.showForm{
+  color: #FFFFFF;
+  background-color: #000000;
 }
 
