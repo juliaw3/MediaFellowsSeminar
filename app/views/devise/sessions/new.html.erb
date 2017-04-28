@@ -1,15 +1,35 @@
-<h2>Log in</h2>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :email, required: false, autofocus: true %>
-    <%= f.input :password, required: false %>
-    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
-  </div>
+</head>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
-  </div>
-<% end %>
+<body class = "signUpForm">
+	<div class = "container">
+		<div class = "backgroundForm">
 
-<%= render "devise/shared/links" %>
+			<h2>Log in</h2>
+
+			<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+			<div class="form-inputs">
+				<%= f.input :email, required: false, autofocus: true %> <br>
+				<%= f.input :password, required: false %> <br>
+				<%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+			</div>
+
+			<div class="form-actions">
+				<%= f.button :submit, "Log in" %>
+			</div>
+			<% end %>
+
+			<%= render "devise/shared/links" %>
+		</div>
+
+	</div>
+</body>
