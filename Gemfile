@@ -10,7 +10,7 @@ end
 gem 'rails', '~> 5.0.1'
 #bootstraps
 gem 'bootstrap-sass', '3.3.6'
-# Use sqlite3 as the database for Active Record
+# Use postgres as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
@@ -49,6 +49,9 @@ gem 'mini_magick', '~> 4.3'
 #admin login
 gem 'devise'
 gem 'rails_admin', '~> 1.1.1'
+
+#making assets work in production
+gem 'rails_12factor', group: :production
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
