@@ -50,6 +50,11 @@ gem 'mini_magick', '~> 4.3'
 gem 'devise'
 gem 'rails_admin', '~> 1.1.1'
 
+#amazonservices
+gem 'aws-sdk', '~> 2'
+gem "figaro"
+gem "fog"
+
 #making assets work in production
 gem 'rails_12factor', group: :production
 
