@@ -13,14 +13,12 @@
     <div class = "container">
       <div class = "row">
         <div class = "col-md-12">
-
           <% if current_user %>
           <%= link_to "Logout", destroy_user_session_path, method: :delete %>
           <% else %>
           <%= link_to "Login", new_user_session_path %>
           <% end %>
         </div>
-
       </div>    
 
 
@@ -36,7 +34,7 @@
             <li><%= link_to "Speaker Series", :controller => '/schedules', :action => 'index' %></li>
             <li><%= link_to "Requirements", :controller => '/requirements', :action => 'index' %></li>
             <li><%= link_to "Internships", :controller => '/internships', :action => 'index' %></li>
-            <li><a href="http://www.depauw.edu/academics/honors-fellows-programs/media-fellows/">DePauw Media Fellows</a></li>
+            <li><a href="http://www.depauw.edu/academics/honors-fellows-programs/media-fellows/" target="blank">DePauw Media Fellows</a></li>
 
           </ul>
         </nav>
