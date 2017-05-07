@@ -64,11 +64,24 @@
                     width: 70}
                     ]} }} -->
 <script type="text/javascript">
-handler = Gmaps.build('Google'
+handler = Gmaps.build('Google', {markers: 
+    {clusterer: 
+        {gridSize: 40, maxZoom: 11,
+            styles:[{
+                textSize: 1,
+                textColor: '#000000',
+                url: '/assets/darkLocation.png',
+                height: 56,
+                width:50
+            }]
+        }}}
 
 
 
                     );
+
+
+
 handler.buildMap({ provider: {styles:[
     {
         "featureType": "all",
@@ -252,6 +265,7 @@ handler.buildMap({ provider: {styles:[
       google.maps.event.addDomListener(window, "load", initialize);
   });
 </script>
+
 
 
 <br>
